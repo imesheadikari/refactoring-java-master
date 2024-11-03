@@ -1,0 +1,19 @@
+@startuml
+
+entity "Customer" {
+}
+
+entity "MovieRental" {
+}
+
+entity "Movie" {
+}
+
+entity "Statement" {
+}
+
+MovieRental }o..|{ Movie
+MovieRental }o..|| Customer
+Statement ..|{ MovieRental
+
+@enduml
